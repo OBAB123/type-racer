@@ -324,6 +324,10 @@ input.addEventListener('input', (e) => {
 
 nextBtn.addEventListener('click', newRound);
 
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') { e.preventDefault(); newRound(); }
+});
+
 newRound();
 </script>
 </body>
